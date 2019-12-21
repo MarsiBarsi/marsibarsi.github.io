@@ -81,6 +81,10 @@ a {
     line-height: 20px;
 }
 
+.about a {
+    color: #1976D2;
+}
+
 .hi {
     margin-bottom: 36px;
 }
