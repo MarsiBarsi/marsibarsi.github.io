@@ -4,6 +4,8 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(251, 251, 251);
+    color: #2b2b2b;
 }
 
 ul {
@@ -25,15 +27,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: rgb(251, 251, 251);
 }
 
 .sidebar a {
-    color: #fff;
+    color: rgb(251, 251, 251);
 }
 
 .sidebar a:hover {
-    color: #eeeeee;
+    color: rgb(230, 230, 230);
 }
 
 .sidebar i {
@@ -72,17 +74,17 @@ a {
 
 .about {
     flex-grow: 2;
-    flex-basis: 800px;
-    padding: 40px;
+    flex-basis: 720px;
+    padding: calc(40px + 1vw) calc(20px + 4vw);
 }
 
 .about p {
     margin-top: 24px;
-    line-height: 20px;
+    line-height: 21px;
 }
 
 .about a {
-    color: #1976D2;
+    color: #1976d2;
 }
 
 .hi {
@@ -90,7 +92,7 @@ a {
 }
 
 .separator::before {
-    content: "...";
+    content: '...';
 }
 
 .separator {
