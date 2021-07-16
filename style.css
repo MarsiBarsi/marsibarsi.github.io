@@ -28,23 +28,9 @@ body {
     margin: 18px 0;
 }
 
-ul {
-    padding: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: white;
-}
-
-.language-switcher {
-    position: absolute;
-    top: 8px;
-    left: 8px;
 }
 
 .links {
