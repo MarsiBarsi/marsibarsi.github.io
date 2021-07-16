@@ -1,11 +1,31 @@
 body {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(251, 251, 251);
     color: #2b2b2b;
+}
+
+.header {
+    display: block;
+    background-image: url(./images/header.jpeg);
+    background-size: cover;
+    background-position: 25% 45%;
+    min-height: fit-content;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 90%) 0px -100px 220px 25px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(20px + 1vw);
+}
+
+.name {
+    color: white;
+    font-size: calc(20px + 2vw);
+    margin: 18px 0;
 }
 
 ul {
@@ -18,28 +38,7 @@ li {
 
 a {
     text-decoration: none;
-}
-
-.sidebar {
-    flex-grow: 1;
-    background-image: url(./images/backgorund.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(251, 251, 251);
-}
-
-.sidebar a {
-    color: rgb(251, 251, 251);
-}
-
-.sidebar a:hover {
-    color: rgb(230, 230, 230);
-}
-
-.sidebar i {
-    margin-right: 4px;
+    color: white;
 }
 
 .language-switcher {
@@ -49,14 +48,16 @@ a {
 }
 
 .links {
-    width: 300px;
+    margin: 0 20px;
+    max-width: 760px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.links li {
-    margin-top: 12px;
-    margin-bottom: 12px;
+.links a {
+    margin: 8px 12px;
+    color: white;
 }
 
 .me {
@@ -67,15 +68,16 @@ a {
 }
 
 .avatar {
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    margin-top: 50px;
+    border-radius: 100px;
+    border: 2px solid white;
+    width: calc(100px + 2vw);
+    height: calc(100px + 2vw);
 }
 
 .about {
-    flex-grow: 2;
-    flex-basis: 720px;
-    padding: calc(40px + 1vw) calc(20px + 4vw);
+    padding: calc(20px + 1vw);
+    max-width: 800px;
 }
 
 .about p {
